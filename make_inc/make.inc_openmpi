@@ -1,0 +1,16 @@
+# Setting for openmpi openblas
+FC     = mpif90
+CC     = mpicc
+CXX    = mpic++
+FFLAGS = -m64 -fPIC -ffree-line-length-none -Ofast -march=native -funroll-loops -fprefetch-loop-arrays -malign-double 
+CFLAGS = -Ofast -lm -march=native -fPIC
+
+SCALAPACK = -lscalapack
+BLAS = -lopenblas
+
+LOADER = $(FC)
+AR = ar
+ARFLAGS = cr
+RANLIB = ranlib
+
+

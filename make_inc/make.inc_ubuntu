@@ -1,0 +1,14 @@
+# Setting for lgk@cs
+FC     = mpif90
+CC     = mpicc
+FFLAGS = -g -O0 -Wall -ffree-line-length-none
+CFLAGS = -g -O0 -Wall
+
+SCALAPACK = $(HOME)/local/lib/libscalapack.a
+LAPACK = $(HOME)/local/lib/liblapack.a 
+BLAS = $(HOME)/local/lib/libblas.a
+
+AR = ar
+ARFLAGS = cr
+RANLIB = ranlib
+
